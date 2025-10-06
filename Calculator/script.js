@@ -9,6 +9,23 @@ let lastAnswer = '';
 
 function updateDisplay() {
   input.textContent = currentInput;
+  autoResizeText(); // ensures text fits nicely
+}
+
+function autoResizeText() {
+  const display = document.getElementById('input');
+  const maxFontSize = 20;
+  const minFontSize = 10;
+  let fontSize = maxFontSize;
+
+  // Reset to max font size first
+  display.style.fontSize = maxFontSize + 'px';
+
+  // Reduce font size dynamically if text overflows
+  while (display.scrollWidth > display.clientWidth && fontSize > minFontSize) {
+    fontSize -= 1;
+    display.style.fontSize = fontSize + 'px';
+  }
 }
 
 buttons.forEach(button => {

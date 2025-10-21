@@ -1,0 +1,192 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  line-height: 1.7;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: #000;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.play-button {
+  margin-top: 40px;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.play-icon {
+  font-size: 24px;
+}
+
+/* Quote Section */
+.quote-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  padding: 0.6rem 5rem;
+}
+
+.quote-text {
+  flex: 1;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.quote-img {
+  flex: 1;
+  text-align: right;
+}
+
+.quote-img img {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Biography Section */
+.bio-section {
+  background-color: #000;
+  color: #fff;
+  padding: 4rem 5rem 2rem;
+  text-align: left;
+  max-width: 700px;
+  margin: auto;
+}
+
+.bio-section h2 {
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.bio-section p {
+  font-size: 1.1rem;
+  color: #ccc;
+  text-align: justify;
+}
+
+/* Footer */
+.footer-line {
+  width: 60%;
+  height: 3px;
+  background-color: #fdfbfb;
+  margin: 30px auto 0;
+  border-radius: 2px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #000;
+  color: #888;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #2c3c89;
+  font-weight: 500;
+}
+
+footer i.fa-dragon {
+  color: #f4d03f;
+  font-size: 1.2rem;
+  margin: 0 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .quote-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quote-text {
+    font-size: 1.3rem;
+  }
+
+  .quote-img {
+    text-align: center;
+  }
+
+  .quote-img img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .play-button {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .quote-section {
+    padding: 40px 5%;
+  }
+
+  .bio-section {
+    padding: 60px 7%;
+  }
+
+  .bio-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .bio-section p {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
